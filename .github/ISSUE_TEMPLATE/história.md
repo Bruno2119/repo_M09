@@ -3,7 +3,7 @@ name: História
 about: Modelo para as histórias do utilizador
 title: ''
 labels: História
-assignees: ''
+assignees: Bruno2119
 
 ---
 
