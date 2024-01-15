@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Quartos e Ocupantes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista de Quartos e Ocupantes</h2>
+
+<table>
+    <tr>
+        <th>Quarto</th>
+        <th>Ocupante</th>
+        <th>Contato</th>
+        <th>Tipo de Quarto</th>
+        <th>Disponibilidade</th>
+    </tr>
+    <tr>
+        <td>Quarto 1</td>
+        <td>Alice Silva</td>
+        <td><a href="mailto:alice@alunos.ipca.pt">alice@alunos.ipca.pt</a></td>
+        <td>Individual</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 2</td>
+        <td>Joana Santos</td>
+        <td><a href="mailto:joana@alunos.ipca.pt">joana@alunos.ipca.pt</a></td>
+        <td>Duplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 3</td>
+        <td>Carla Oliveira</td>
+        <td><a href="mailto:carla@alunos.ipca.pt">carla@alunos.ipca.pt</a></td>
+        <td>Triplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 4</td>
+        <td>Daniel Lima</td>
+        <td><a href="mailto:daniel@alunos.ipca.pt">daniel@alunos.ipca.pt</a></td>
+        <td>Individual</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 5</td>
+        <td>Eduarda Pereira</td>
+        <td><a href="mailto:eduarda@alunos.ipca.pt">eduarda@alunos.ipca.pt</a></td>
+        <td>Duplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 6</td>
+        <td>Fernando Oliveira</td>
+        <td><a href="mailto:fernando@alunos.ipca.pt">fernando@alunos.ipca.pt</a></td>
+        <td>Triplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 7</td>
+        <td>Gabriela Costa</td>
+        <td><a href="mailto:gabriela@alunos.ipca.pt">gabriela@alunos.ipca.pt</a></td>
+        <td>Individual</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 8</td>
+        <td>Hugo Martins</td>
+        <td><a href="mailto:hugo@alunos.ipca.pt">hugo@alunos.ipca.pt</a></td>
+        <td>Duplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 9</td>
+        <td>Isabela Silva</td>
+        <td><a href="mailto:isabela@alunos.ipca.pt">isabela@alunos.ipca.pt</a></td>
+        <td>Triplo</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Quarto 10</td>
+        <td>José Lima</td>
+        <td><a href="mailto:jose@alunos.ipca.pt">jose@alunos.ipca.pt</a></td>
+        <td>Individual</td>
+        <td>
+            <select>
+                <option value="ocupado">Ocupado</option>
+                <option value="disponivel">Disponível</option>
+            </select>
+        </td>
+    </tr>
+    <!-- Adicionando a nova linha para Quarto 11 -->
+    <tr>
+        <td>Quarto 11</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <select>
+                <option value="disponivel">Disponível</option>
+                <option value="ocupado">Ocupado</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<!-- Botão para atualizar disponibilidade -->
+<button onclick="atualizarDisponibilidade()">Atualizar Disponibilidade</button>
+
+<script>
+    function atualizarDisponibilidade() {
+        // Lógica para atualizar a disponibilidade
+        alert("Disponibilidade atualizada com sucesso!");
+    }
+</script>
+
+</body>
+</html>

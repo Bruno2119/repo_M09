@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Pedidos</title>
+
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, button {
+            margin-top: 10px;
+        }
+
+        #informacoesDetalhadas {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <label for="statusPedido">Status do Pedido:</label>
+    <select id="statusPedido" name="statusPedido">
+        <option value="pendentes" selected>Pedidos Pendentes</option>
+        <option value="aprovados">Pedidos Aprovados</option>
+        <option value="recusados">Pedidos Recusados</option>
+    </select>
+</div>
+
+<div>
+    <h2>Lista de Pedidos Pendentes</h2>
+    <ul>
+        <li>
+            <span>Nome: Bruno Enes</span>
+            <button onclick="verMaisInformacoes('Bruno Enes', '25992')">Ver Mais</button>
+            <button onclick="aprovarPedido('Bruno Enes')">Aprovar Pedido</button>
+        </li>
+        
+
+<div id="informacoesDetalhadas">
+    <h2>Informações Detalhadas</h2>
+    <p><strong>Nome:</strong> <span id="detalheNome"></span></p>
+    <p><strong>Número de Estudante:</strong> <span id="detalheNumeroEstudante"></span></p>
+</div>
+
+<script>
+    function verMaisInformacoes(nome, numeroEstudante) {
+        // Atualize o conteúdo das informações detalhadas
+        document.getElementById("detalheNome").innerText = nome;
+        document.getElementById("detalheNumeroEstudante").innerText = "Número de Estudante: " + numeroEstudante;
+
+        // Exiba as informações detalhadas
+        document.getElementById("informacoesDetalhadas").style.display = "block";
+    }
+
+    function aprovarPedido(nome) {
+        alert("Pedido de " + nome + " aprovado!");
+        // Adicione a lógica para aprovar o pedido aqui
+    }
+</script>
+
+</body>
+</html>
